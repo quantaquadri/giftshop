@@ -1,2 +1,961 @@
 {% extends 'base.html' %}
 {% block body %}
+
+
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">#FolaShay18</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#"> << Go Back Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+
+
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Our WishList</h1>
+        <p class="lead">Thank you so much for considering buying us gift(s). You can order via this platform and we would surely receive it.</p>
+        </div>
+
+        <div class="container">
+
+        <div id="site">
+            <header id="masthead">
+                <!-- <h1>#FolaShay18<span class="tagline">Our WishList</h1> -->
+            </header>
+
+            
+
+            <br>
+                    <p> <strong>Our Kitchen WishList:</strong></p>
+                
+                    <div id="content">
+                        <div id="products">
+                            <ul>
+                                <div class="row">
+
+                                    <div class="col-md-3">
+                                        <div class="card">							
+                                            <li>
+                                                <div class="product-image" style="padding-top:10px;">
+                                                    <img src="{{ url_for('static', filename = 'images/k1.png') }}" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Gas Cooker" data-price="46999">
+                                                    <h3 class="product-name">Gas Cooker</h3>
+                                                    <p class="product-price"><strong> &#8358; 46,999</strong></p>
+                                                    <form class="add-to-cart" action=" {{ url_for('cart') }}" method="post">
+                                                        <div>
+                                                            <label for="qty-1">Quantity:</label>
+                                                            <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                                                        </div><br>
+                                                        <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <li>
+                                                <div class="product-image"  style="padding-top:10px;">
+                                                    <img src="images/k2.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Sandwich Maker" data-price="4500">
+                                                    <h3 class="product-name">Sandwich Maker</h3>
+                                                    <p class="product-price"><strong> &#8358; 4,500</strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-2">Quantity:</label>
+                                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                                        </div><br>
+                                                        <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+                                
+                                    <div class="col-md-3">
+                                        <div class="card">											
+                                            <li>
+                                                <div class="product-image"  style="padding-top:10px;">
+                                                    <img src="images/k3.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Electric Kettle" data-price="5490">
+                                                    <h3 class="product-name">Electric Kettle</h3>
+                                                    <p class="product-price"><strong> &#8358;  5,490</strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-3">Quantity:</label>
+                                                            <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                        </div><br>
+                                                        <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card">							
+                                            <li>
+                                                <div class="product-image" style="padding-top:10px;">
+                                                    <img src="images/k5.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Microwave Oven" data-price="11000">
+                                                    <h3 class="product-name">Microwave Oven</h3>
+                                                    <p class="product-price"><strong> &#8358; 11,000</strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-1">Quantity:</label>
+                                                            <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                                                        </div><br>
+                                                        <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <li>
+                                                <div class="product-image"  style="padding-top:10px;">
+                                                    <img src="images/k4.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Gas Cylinder" data-price="8200">
+                                                    <h3 class="product-name">Gas Cylinder</h3>
+                                                    <p class="product-price"><strong> &#8358; 8,200</strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-2">Quantity:</label>
+                                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                                        </div><br>
+                                                        <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+                                
+                                    <div class="col-md-3">
+                                        <div class="card">											
+                                            <li>
+                                                <div class="product-image"  style="padding-top:10px;">
+                                                    <img src="images/k6.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Blender" data-price="10199">
+                                                    <h3 class="product-name">Blender</h3>
+                                                    <p class="product-price"><strong> &#8358;  10,199</strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-3">Quantity:</label>
+                                                            <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                        </div><br>
+                                                        <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <li>
+                                                <div class="product-image"  style="padding-top:10px;">
+                                                    <img src="images/k7.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Fridge" data-price="45280">
+                                                    <h3 class="product-name">Fridge</h3>
+                                                    <p class="product-price"><strong> &#8358; 45,280</strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-2">Quantity:</label>
+                                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                                        </div><br>
+                                                        <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+                                
+                                    <div class="col-md-3">
+                                        <div class="card">											
+                                            <li>
+                                                <div class="product-image"  style="padding-top:10px;">
+                                                    <img src="images/k8.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Freezer" data-price="51900">
+                                                    <h3 class="product-name">Freezer</h3>
+                                                    <p class="product-price"><strong> &#8358;  51,900</strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-3">Quantity:</label>
+                                                            <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                        </div><br>
+                                                        <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+                                </div>
+
+                                <br><br><p> <strong>Our Living Room WishList:</strong></p><br><br>
+
+                                <div class="row">
+                                        
+
+                                    <div class="col-md-3">
+                                        <div class="card">							
+                                            <li>
+                                                <div class="product-image" style="padding-top:10px;">
+                                                    <img src="images/k9.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Television" data-price=" 80000">
+                                                    <h3 class="product-name">Television</h3>
+                                                    <p class="product-price"><strong> &#8358;  80,000</strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-1">Quantity:</label>
+                                                            <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                                                        </div><br>
+                                                        <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <li>
+                                                <div class="product-image"  style="padding-top:10px;">
+                                                    <img src="images/k10.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Home Theater" data-price="38500">
+                                                    <h3 class="product-name">Home Theater</h3>
+                                                    <p class="product-price"><strong> &#8358; 33,000</strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-2">Quantity:</label>
+                                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                                        </div><br>
+                                                        <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+                                
+                                    <div class="col-md-3">
+                                        <div class="card">											
+                                            <li>
+                                                <div class="product-image"  style="padding-top:10px;">
+                                                    <img src="images/k11.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="DSTV" data-price=" 14500">
+                                                    <h3 class="product-name"> DSTV </h3>
+                                                    <p class="product-price"><strong> &#8358;   14,500</strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-3">Quantity:</label>
+                                                            <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                        </div><br>
+                                                        <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card">							
+                                            <li>
+                                                <div class="product-image" style="padding-top:10px;">
+                                                    <img src="images/k12.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Air Conditioner" data-price="75000">
+                                                    <h3 class="product-name">Air Conditioner</h3>
+                                                    <p class="product-price"><strong> &#8358; 75,000</strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-1">Quantity:</label>
+                                                            <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                                                        </div><br>
+                                                        <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <li>
+                                                <div class="product-image"  style="padding-top:10px;">
+                                                    <img src="images/k14.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Water Dispenser" data-price="31000">
+                                                    <h3 class="product-name">Water Dispenser</h3>
+                                                    <p class="product-price"><strong> &#8358; 31,000</strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-2">Quantity:</label>
+                                                            <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                                        </div><br>
+                                                        <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+                                
+                                    <div class="col-md-3">
+                                        <div class="card">											
+                                            <li>
+                                                <div class="product-image"  style="padding-top:10px;">
+                                                    <img src="images/k13.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Water Dispenser" data-price="6,499">
+                                                    <h3 class="product-name">Water Dispenser</h3>
+                                                    <p class="product-price"><strong> &#8358;  6,499</strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-3">Quantity:</label>
+                                                            <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                        </div><br>
+                                                        <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card">											
+                                            <li>
+                                                <div class="product-image"  style="padding-top:10px;">
+                                                    <img src="images/k15.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Stabilizer" data-price="11330">
+                                                    <h3 class="product-name">Stabilizer</h3>
+                                                    <p class="product-price"><strong> &#8358;  11,330 </strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-3">Quantity:</label>
+                                                            <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                        </div><br>															<p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+                                </div>	
+
+                                <br><br><p> <strong>Others:</strong></p><br><br>
+
+                                <div class="row">
+
+                                    <div class="col-md-3">
+                                        <div class="card">											
+                                            <li>
+                                                <div class="product-image"  style="padding-top:10px;">
+                                                    <img src="images/k16.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Washing Machine" data-price="84960">
+                                                    <h3 class="product-name">Washing Machine</h3>
+                                                    <p class="product-price"><strong> &#8358;  84,960 </strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-3">Quantity:</label>
+                                                            <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                        </div><br>															<p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card">											
+                                            <li>
+                                                <div class="product-image"  style="padding-top:10px;">
+                                                    <img src="images/k17.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Electric Iron" data-price="2760">
+                                                    <h3 class="product-name">Electric Iron</h3>
+                                                    <p class="product-price"><strong> &#8358;  2,760 </strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-3">Quantity:</label>
+                                                            <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                        </div><br>															<p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card">											
+                                            <li>
+                                                <div class="product-image"  style="padding-top:10px;">
+                                                    <img src="images/k18.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Rechargeable Fan" data-price="16990">
+                                                    <h3 class="product-name">RECHARGEABLE FAN</h3>
+                                                    <p class="product-price"><strong> &#8358;  16,990 </strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-3">Quantity:</label>
+                                                            <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                        </div><br>															<p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+
+
+                                    <div class="col-md-3">
+                                        <div class="card">											
+                                            <li>
+                                                <div class="product-image"  style="padding-top:10px;">
+                                                    <img src="images/k19.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Umrah" data-price="3000000">
+                                                    <h3 class="product-name">Umrah</h3>
+                                                    <p class="product-price"><strong> &#8358;  3,000,000 </strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-3">Quantity:</label>
+                                                            <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                        </div><br>															<p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="card">											
+                                            <li>
+                                                <div class="product-image"  style="padding-top:10px;">
+                                                    <img src="images/k20.png" alt="" />
+                                                </div>
+                                                <div class="product-description" data-name="Vacation" data-price="1000000">
+                                                    <h3 class="product-name">Dubai Vacation</h3>
+                                                    <p class="product-price"><strong> &#8358;  1,000,000 </strong></p>
+                                                    <form class="add-to-cart" action="cart.html" method="post">
+                                                        <div>
+                                                            <label for="qty-3">Quantity:</label>
+                                                            <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                        </div><br>															<p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </div><br>
+                                    </div>
+
+
+
+                                </div>						
+                            </ul>
+                        </div>
+                    </div>
+        </div>
+                
+                
+
+        </div>
+        </div>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="#">#FolaShay18</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#"> << Go Back Home <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Our WishList</h1>
+        <p class="lead">Thank you so much for considering buying us gift(s). You can order via this platform and we would surely receive it.</p>
+        </div>
+
+        <div class="container">
+
+            <div id="site">
+                <header id="masthead">
+                    <!-- <h1>#FolaShay18<span class="tagline">Our WishList</h1> -->
+                </header>
+
+                
+
+                <br>
+                        <p> <strong>Our Kitchen WishList:</strong></p>
+                    
+                        <div id="content">
+                            <div id="products">
+                                <ul>
+                                    <div class="row">
+
+                                        <div class="col-md-3">
+                                            <div class="card">							
+                                                <li>
+                                                    <div class="product-image" style="padding-top:10px;">
+                                                        <img src="images/k1.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Gas Cooker" data-price="46999">
+                                                        <h3 class="product-name">Gas Cooker</h3>
+                                                        <p class="product-price"><strong> &#8358; 46,999</strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-1">Quantity:</label>
+                                                                <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                                                            </div><br>
+                                                            <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <li>
+                                                    <div class="product-image"  style="padding-top:10px;">
+                                                        <img src="images/k2.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Sandwich Maker" data-price="4500">
+                                                        <h3 class="product-name">Sandwich Maker</h3>
+                                                        <p class="product-price"><strong> &#8358; 4,500</strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-2">Quantity:</label>
+                                                                <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                                            </div><br>
+                                                            <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+                                    
+                                        <div class="col-md-3">
+                                            <div class="card">											
+                                                <li>
+                                                    <div class="product-image"  style="padding-top:10px;">
+                                                        <img src="images/k3.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Electric Kettle" data-price="5490">
+                                                        <h3 class="product-name">Electric Kettle</h3>
+                                                        <p class="product-price"><strong> &#8358;  5,490</strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-3">Quantity:</label>
+                                                                <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                            </div><br>
+                                                            <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card">							
+                                                <li>
+                                                    <div class="product-image" style="padding-top:10px;">
+                                                        <img src="images/k5.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Microwave Oven" data-price="11000">
+                                                        <h3 class="product-name">Microwave Oven</h3>
+                                                        <p class="product-price"><strong> &#8358; 11,000</strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-1">Quantity:</label>
+                                                                <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                                                            </div><br>
+                                                            <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <li>
+                                                    <div class="product-image"  style="padding-top:10px;">
+                                                        <img src="images/k4.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Gas Cylinder" data-price="8200">
+                                                        <h3 class="product-name">Gas Cylinder</h3>
+                                                        <p class="product-price"><strong> &#8358; 8,200</strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-2">Quantity:</label>
+                                                                <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                                            </div><br>
+                                                            <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+                                    
+                                        <div class="col-md-3">
+                                            <div class="card">											
+                                                <li>
+                                                    <div class="product-image"  style="padding-top:10px;">
+                                                        <img src="images/k6.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Blender" data-price="10199">
+                                                        <h3 class="product-name">Blender</h3>
+                                                        <p class="product-price"><strong> &#8358;  10,199</strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-3">Quantity:</label>
+                                                                <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                            </div><br>
+                                                            <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <li>
+                                                    <div class="product-image"  style="padding-top:10px;">
+                                                        <img src="images/k7.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Fridge" data-price="45280">
+                                                        <h3 class="product-name">Fridge</h3>
+                                                        <p class="product-price"><strong> &#8358; 45,280</strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-2">Quantity:</label>
+                                                                <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                                            </div><br>
+                                                            <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+                                    
+                                        <div class="col-md-3">
+                                            <div class="card">											
+                                                <li>
+                                                    <div class="product-image"  style="padding-top:10px;">
+                                                        <img src="images/k8.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Freezer" data-price="51900">
+                                                        <h3 class="product-name">Freezer</h3>
+                                                        <p class="product-price"><strong> &#8358;  51,900</strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-3">Quantity:</label>
+                                                                <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                            </div><br>
+                                                            <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+                                    </div>
+
+                                    <br><br><p> <strong>Our Living Room WishList:</strong></p><br><br>
+
+                                    <div class="row">
+                                            
+
+                                        <div class="col-md-3">
+                                            <div class="card">							
+                                                <li>
+                                                    <div class="product-image" style="padding-top:10px;">
+                                                        <img src="images/k9.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Television" data-price=" 80000">
+                                                        <h3 class="product-name">Television</h3>
+                                                        <p class="product-price"><strong> &#8358;  80,000</strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-1">Quantity:</label>
+                                                                <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                                                            </div><br>
+                                                            <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <li>
+                                                    <div class="product-image"  style="padding-top:10px;">
+                                                        <img src="images/k10.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Home Theater" data-price="38500">
+                                                        <h3 class="product-name">Home Theater</h3>
+                                                        <p class="product-price"><strong> &#8358; 33,000</strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-2">Quantity:</label>
+                                                                <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                                            </div><br>
+                                                            <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+                                    
+                                        <div class="col-md-3">
+                                            <div class="card">											
+                                                <li>
+                                                    <div class="product-image"  style="padding-top:10px;">
+                                                        <img src="images/k11.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="DSTV" data-price=" 14500">
+                                                        <h3 class="product-name"> DSTV </h3>
+                                                        <p class="product-price"><strong> &#8358;   14,500</strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-3">Quantity:</label>
+                                                                <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                            </div><br>
+                                                            <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card">							
+                                                <li>
+                                                    <div class="product-image" style="padding-top:10px;">
+                                                        <img src="images/k12.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Air Conditioner" data-price="75000">
+                                                        <h3 class="product-name">Air Conditioner</h3>
+                                                        <p class="product-price"><strong> &#8358; 75,000</strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-1">Quantity:</label>
+                                                                <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                                                            </div><br>
+                                                            <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card">
+                                                <li>
+                                                    <div class="product-image"  style="padding-top:10px;">
+                                                        <img src="images/k14.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Water Dispenser" data-price="31000">
+                                                        <h3 class="product-name">Water Dispenser</h3>
+                                                        <p class="product-price"><strong> &#8358; 31,000</strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-2">Quantity:</label>
+                                                                <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                                                            </div><br>
+                                                            <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+                                    
+                                        <div class="col-md-3">
+                                            <div class="card">											
+                                                <li>
+                                                    <div class="product-image"  style="padding-top:10px;">
+                                                        <img src="images/k13.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Water Dispenser" data-price="6,499">
+                                                        <h3 class="product-name">Water Dispenser</h3>
+                                                        <p class="product-price"><strong> &#8358;  6,499</strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-3">Quantity:</label>
+                                                                <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                            </div><br>
+                                                            <p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card">											
+                                                <li>
+                                                    <div class="product-image"  style="padding-top:10px;">
+                                                        <img src="images/k15.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Stabilizer" data-price="11330">
+                                                        <h3 class="product-name">Stabilizer</h3>
+                                                        <p class="product-price"><strong> &#8358;  11,330 </strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-3">Quantity:</label>
+                                                                <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                            </div><br>															<p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+                                    </div>	
+
+                                    <br><br><p> <strong>Others:</strong></p><br><br>
+
+                                    <div class="row">
+
+                                        <div class="col-md-3">
+                                            <div class="card">											
+                                                <li>
+                                                    <div class="product-image"  style="padding-top:10px;">
+                                                        <img src="images/k16.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Washing Machine" data-price="84960">
+                                                        <h3 class="product-name">Washing Machine</h3>
+                                                        <p class="product-price"><strong> &#8358;  84,960 </strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-3">Quantity:</label>
+                                                                <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                            </div><br>															<p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card">											
+                                                <li>
+                                                    <div class="product-image"  style="padding-top:10px;">
+                                                        <img src="images/k17.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Electric Iron" data-price="2760">
+                                                        <h3 class="product-name">Electric Iron</h3>
+                                                        <p class="product-price"><strong> &#8358;  2,760 </strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-3">Quantity:</label>
+                                                                <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                            </div><br>															<p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card">											
+                                                <li>
+                                                    <div class="product-image"  style="padding-top:10px;">
+                                                        <img src="images/k18.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Rechargeable Fan" data-price="16990">
+                                                        <h3 class="product-name">RECHARGEABLE FAN</h3>
+                                                        <p class="product-price"><strong> &#8358;  16,990 </strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-3">Quantity:</label>
+                                                                <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                            </div><br>															<p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+
+
+                                        <div class="col-md-3">
+                                            <div class="card">											
+                                                <li>
+                                                    <div class="product-image"  style="padding-top:10px;">
+                                                        <img src="images/k19.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Umrah" data-price="3000000">
+                                                        <h3 class="product-name">Umrah</h3>
+                                                        <p class="product-price"><strong> &#8358;  3,000,000 </strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-3">Quantity:</label>
+                                                                <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                            </div><br>															<p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card">											
+                                                <li>
+                                                    <div class="product-image"  style="padding-top:10px;">
+                                                        <img src="images/k20.png" alt="" />
+                                                    </div>
+                                                    <div class="product-description" data-name="Vacation" data-price="1000000">
+                                                        <h3 class="product-name">Dubai Vacation</h3>
+                                                        <p class="product-price"><strong> &#8358;  1,000,000 </strong></p>
+                                                        <form class="add-to-cart" action="cart.html" method="post">
+                                                            <div>
+                                                                <label for="qty-3">Quantity:</label>
+                                                                <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                                                            </div><br>															<p><input type="submit" value="Buy With Love" class="btn" /></p>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </div><br>
+                                        </div>
+
+
+
+                                    </div>						
+                                </ul>
+                            </div>
+                        </div>
+            </div>
+                    
+                    
+
+            </div>
+        </div>
+
+
+{% endblock %}
